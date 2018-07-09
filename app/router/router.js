@@ -5,6 +5,7 @@ import { createStackNavigator } from 'react-navigation'
 import CounterScreen from '../pages/Container'
 import TodoScreen from '../pages/Todo'
 import AddScreen from '../pages/AddTodo'
+import TodoDetailScreen from '../pages/TodoDetail'
 
 const stack = [{ title: 'Counter' }, { title: 'Todo' }]
 
@@ -60,4 +61,7 @@ export default createStackNavigator({
   Counter: CounterScreen,
   Todo: TodoScreen,
   AddTodo: AddScreen,
+  TodoDetail: TodoDetailScreen
+}, {
+  initialRouteName: 'Todo'
 })

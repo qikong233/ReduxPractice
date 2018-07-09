@@ -28,6 +28,10 @@ class App extends Component {
     this.props.navigation.navigate('AddTodo')
   }
 
+  enter = (item, index) => {
+    this.props.navigation.navigate('TodoDetail', {item, index})
+  }
+
   render () {
     const { todo } = this.props
     return (
@@ -45,13 +49,14 @@ class App extends Component {
 
   renderItem = (item, index) => {
     return (
-      <View
+      <TouchableOpacity
         style={{
           height: 64,
           width: '100%',
           flexDirection: 'row',
           alignItems: 'center'
         }}
+        onPress={() => this.enter(item, index)}
       >
         <Icon
           iconStyle={{ marginLeft: 15 }}
@@ -73,7 +78,7 @@ class App extends Component {
             backgroundColor: 'lightgray'
           }}
         />
-      </View>
+      </TouchableOpacity>
     )
   }
 }
