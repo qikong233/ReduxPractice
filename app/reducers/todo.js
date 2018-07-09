@@ -2,13 +2,9 @@ import * as types from '../actions/actionTypes'
 
 const initialState = {
   list: [
-    { title: 'learn Redux', description: 'learn', complete: false },
-    { title: 'paper work', description: 'oooops', complete: false },
-    { title: 'wash work', description: 'oh!', complete: false },
-    { title: 'gym', description: 'fight', complete: true },
-    { title: 'weapp online', description: 'friday night', complete: true },
-    { title: 'taro', description: 'this weekend', complete: true },
-    { title: 'flutter', description: 'observe', complete: true },
+    { title: 'Redux', description: 'learning', complete: false },
+    { title: 'gym', description: 'do it', complete: false },
+    { title: 'check paper', description: 'friday night', complete: true },
   ]
 }
 

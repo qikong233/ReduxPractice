@@ -62,6 +62,4 @@ export default createStackNavigator({
   Todo: TodoScreen,
   AddTodo: AddScreen,
   TodoDetail: TodoDetailScreen
-}, {
-  initialRouteName: 'Todo'
 })
